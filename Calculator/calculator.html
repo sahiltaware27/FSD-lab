@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="first.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body id="A">
+    <h1 class="text-center"><b>Calculator</b></h1>
+    <div class="calculator bg-light p-4">
+        <input type="text" id="result" class="form-control mb-3" disabled>
+        <div class="row">
+            <button class="btn btn-secondary col-3" onclick="clearResult()">C</button>
+            <button class="btn btn-secondary col-3" onclick="deleteLast()">DEL</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('/')">/</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('*')">*</button>
+        </div>
+        <div class="row mt-2">
+            <button class="btn btn-secondary col-3" onclick="appendValue('7')">7</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('8')">8</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('9')">9</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('-')">-</button>
+        </div>
+        <div class="row mt-2">
+            <button class="btn btn-secondary col-3" onclick="appendValue('4')">4</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('5')">5</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('6')">6</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('+')">+</button>
+        </div>
+        <div class="row mt-2">
+            <button class="btn btn-secondary col-3" onclick="appendValue('1')">1</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('2')">2</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('3')">3</button>
+            <button class="btn btn-secondary col-3" onclick="calculateResult()">=</button>
+        </div>
+        <div class="row mt-2">
+            <button class="btn btn-secondary col-3" onclick="appendValue('0')">0</button>
+            <button class="btn btn-secondary col-3" onclick="appendValue('.')">.</button>
+        </div>
+    </div>
+</body>
+</html>
